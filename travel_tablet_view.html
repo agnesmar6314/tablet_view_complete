@@ -8,6 +8,8 @@
     <title>Travel</title>
 </head>
 <body> 
+
+    
     <nav id="nav_bar">
         <a class = "skip-main" href = "#main" id = "skip">Skip to Main Content</a> 
         <ul style="list-style-type: none">
@@ -17,14 +19,48 @@
           </ul>
     </nav>
 
-    <p class = "name_feature">Hi</p>
-    <p class = "name_feature" id = "name"> Agnes </p>
-    <script>
-        let nm = prompt("What is your name?")
-        document.getElementById('name').innerHTML = nm
-    </script>
+    
+
+   
    
     <header> <h1>Travel</h1> </header> <!--Place #1--> 
+    <p>Listen to Agnes' favorite song below!</p>
+    <audio id="audioPlayer" controls>
+        <source src="Houndmouth - Sedona.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+      
+        // Play the audio
+        function playAudio() {
+          audioPlayer.play();
+        }
+      
+        // Pause the audio
+        function pauseAudio() {
+          audioPlayer.pause();
+        }
+      
+        // Adjust volume (0.0 to 1.0)
+        function setVolume(volume) {
+          audioPlayer.volume = volume;
+        }
+      </script>
+
+<div id = "pets_list">
+    <a href = "#main" > Palo Alto</a> 
+    <a href = "#pet_2" > Yellowstone</a> 
+    <a href = "#pet_3" > Seattle</a> 
+    <a href = "#pet_4" > Dubai</a> 
+    <a href = "#pet_5" > Rome</a> 
+    <a href = "#pet_6" > Jungfrau</a> 
+    
+
+
+</div>
+
     <main id = "main">
     <div>
         <h2>Palo Alto</h2>
@@ -75,7 +111,7 @@
             <!-- Agnes Mar -->
 
     </div>
-    <div>
+    <div id = "pet_2">
         <h2>Yellowstone</h2> <!--Place #2-->
 
         <img class = "animation" src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
@@ -123,7 +159,7 @@
         </div>
         <!-- Colleen van Lent -->
     </div>
-<div> 
+<div id = "pet_3"> 
         <h2>Seattle, Washington</h2> <!--PLACE #3-->
         <img class = "animation" src="images/SeattlePrimaryImage.gif" width="400" alt="The Ferris wheel in the summer in Seattle zoomed in next to the Space needle taken from a ferry boat.">
         <img src="images/SeattlePrimaryImage.jpg" width="400" alt="The Ferris wheel in the summer in Seattle zoomed in next to the Space needle taken from a ferry boat.">
@@ -168,7 +204,7 @@
         
 
 </div>
-<div>
+<div id = "pet_4">
         <h2>Dubai, United Arab Emirates</h2> <!--PLACE #4-->
 
 
@@ -213,7 +249,7 @@ Dubai is a growing attraction for many travelers. This city is located in the Un
 <!--Nathan Lee-->
 </div>
 
-<div>
+<div id = "pet_5">
     <div>
         <h2>Rome, Italy</h2> <!--PLACE #5-->
         <figure>
@@ -265,7 +301,7 @@ Dubai is a growing attraction for many travelers. This city is located in the Un
 
 </div>
 
-<div>
+<div id = "pet_6">
     <h1>Jungfrau Switzerland</h1>
     
             <img class = "animation" src=images/jungfrau-helicopter.gif width="400" height="300" alt="Helicoper in Jungfrau.">

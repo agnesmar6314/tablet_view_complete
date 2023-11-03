@@ -8,7 +8,7 @@
     <title>Index</title>
 </head>
 <body> 
-    <a class = "skip-main" href = "#main" id = "skip">Skip to Main Content</a> 
+    <a class = "skip-main" href = "#main" > Skip to Main Content</a> 
     <nav id="nav_bar">
         <ul style="list-style-type: none">
             <li><a href = "index_tablet_view.html" class="active-page">Home/Pets</a></li>
@@ -17,13 +17,44 @@
           </ul>
     </nav>
     
-    <p class = "name_feature">Hi</p>
-    <p class = "name_feature" id = "name"> Agnes </p>
-    <script>
-        let nm = prompt("What is your name?")
-        document.getElementById('name').innerHTML = nm
-    </script>
+    
     <header> <h1>Pets</h1> </header>
+    <p>Listen to Agnes' favorite song below!</p>
+    <audio id="audioPlayer" controls>
+        <source src="Houndmouth - Sedona.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+      
+        // Play the audio
+        function playAudio() {
+          audioPlayer.play();
+        }
+      
+        // Pause the audio
+        function pauseAudio() {
+          audioPlayer.pause();
+        }
+      
+        // Adjust volume (0.0 to 1.0)
+        function setVolume(volume) {
+          audioPlayer.volume = volume;
+        }
+      </script>
+    
+    <div id = "pets_list">
+        <a href = "#main" > Bacon Q Dog</a> 
+        <a href = "#pet_2" > Cheeto (Chicken)</a> 
+        <a href = "#pet_3" > Milktea</a> 
+        <a href = "#pet_4" > Finn</a> 
+        <a href = "#pet_5" > Jax</a> 
+        
+
+
+    </div>
+
     <main id = "main"><div> <!--Pet #1-->
         <h2>Bacon Q Dog</h2>
         <img id = "main_pic" src="images/bacon.jpg" width="400" alt= "Brown labradoodle wearing colorful lei">
@@ -58,7 +89,7 @@
 
 
     </div>
-    <div> <!--Pet #2-->
+    <div id = "pet_2"> <!--Pet #2-->
         <h2>Cheeto (Chicken)</h2>
         <img id = "main_pic" src="images/cheeto_cattree.jpg" width="400" alt= "Orange cat hanging paws off a cat tower">
         <p>
@@ -82,7 +113,7 @@
         </ul>
         <!--Divya Shankar-->
     </div>
-    <div> <!--Pet #3-->
+    <div id = "pet_3"> <!--Pet #3-->
         <h2>Milktea</h2>
         <img id = "main_pic" src="images/Milktea_comfy.jpg" width="400" alt= "Milktea taking nap">
         <p>
@@ -109,7 +140,7 @@
         </ul>
         <!--Olive Ren-->
     </div>
-    <div> <!--Pet #4-->
+    <div id = "pet_4"> <!--Pet #4-->
      
             <h2> Finn </h2> 
 
@@ -145,7 +176,7 @@
      
         
     </div>
-    <div> <!--Pet #5-->
+    <div id = "pet_5"> <!--Pet #5-->
         <h2>Jax</h2>
         <img id = "main_pic" src="images/Jax.jpg" width="400" alt= "A black and white kitten sitting down and wearing a yellow collar.
         ">

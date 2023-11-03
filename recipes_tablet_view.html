@@ -8,6 +8,7 @@
     <title>Recipes</title>
 </head>
 <body> 
+   
     <a class = "skip-main" href = "#main">Skip to Main Content</a> 
     <nav id="nav_bar">
         <ul style="list-style-type: none">
@@ -17,14 +18,42 @@
           </ul>
     </nav>
 
-    <p class = "name_feature">Hi</p>
-    <p class = "name_feature" id = "name"> Agnes </p>
-    <script>
-        let nm = prompt("What is your name?")
-        document.getElementById('name').innerHTML = nm
-    </script>
     
+
+
     <header> <h1>Recipes</h1> </header>
+    <p>Listen to Agnes' favorite song below!</p>
+    <audio id="audioPlayer" controls>
+        <source src="Houndmouth - Sedona.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+      
+        // Play the audio
+        function playAudio() {
+          audioPlayer.play();
+        }
+      
+        // Pause the audio
+        function pauseAudio() {
+          audioPlayer.pause();
+        }
+      
+        // Adjust volume (0.0 to 1.0)
+        function setVolume(volume) {
+          audioPlayer.volume = volume;
+        }
+      </script>
+      <div id = "pets_list">
+        <a href = "#main" > Double Chocolate Cookies</a> 
+        <a href = "#pet_2" > Shrimp Scampi</a> 
+        <a href = "#pet_3" > Brownies</a> 
+        
+
+
+    </div>
     <main id="main"> 
     <div>
        
@@ -71,7 +100,7 @@
         <!-- Colleen van Lent -->
 
     </div>
-    <div>
+    <div id = "pet_2">
         <h2>Shrimp Scampi</h2>
         <img src="images/shrimp_scampi.jpg" alt ="Shrimp scampi is a classic Italian-American delight, where succulent shrimp meet a medley of garlic, butter, and white wine. Sautéed to pink perfection, the shrimp mingle with a fragrant blend of garlic and red pepper flakes. A drizzle of white wine and a squeeze of lemon create a luxurious sauce, embracing the dish's linguine base. With a sprinkle of parsley, it's a harmonious, flavorful masterpiece that exemplifies both simplicity and taste.
         "/>
@@ -103,7 +132,7 @@
             </div>
         <!-- Anna Torell -->
     </div>
-<div>
+<div id = "pet_3">
   
 
         <h2>Mom's brownie recipe</h2>

@@ -125,7 +125,8 @@ a.skip-main:focus, a.skip-main:active {
     gap: 10px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
+
     
     .name_feature {
         margin: 0 auto;
@@ -175,10 +176,21 @@ a.skip-main:focus, a.skip-main:active {
         width: 50%;
     }
 
+    #pets_list {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    #pets_list a {
+        padding: 10px;
+    }
+
     
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1250px) {
 
 
     .container > div{
